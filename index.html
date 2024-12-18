@@ -6,9 +6,12 @@
   <title>Oh, OffensioX. Redirecting...</title>
 </head>
 <body>
-  <p>If you are not redirected automatically, <a href="https://offensiox.co/">click here</a>.</p>
+  <p>If you are not redirected automatically, <a href="https://offensiox.com/">click here</a>.</p>
   <script>
-    window.location.href = "https://offensiox.com/";
+    // Check if the current URL path is '/siem'
+    if (window.location.pathname !== '/siem') {
+      window.location.href = "https://offensiox.com/";
+    }
   </script>
 </body>
 </html>
